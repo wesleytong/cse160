@@ -1,0 +1,57 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <style>
+        div{
+            margin-bottom: 10;
+        }
+        input{
+            width: 100;
+        }
+    </style>
+</head>
+<body onload="main()">
+    <div>
+        <canvas id="webgl" width="400" height="400">
+            Please use a browser that supports canvas
+        </canvas>
+    </div>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="fuck.js"></script>
+    <div>
+        <div>
+            <input type="button" value="Clear Canvas" id="clear">
+        </div>
+        <b>Drawing Mode:</b>
+        <div>
+            <input type="button" value="Squares" id="Square">
+            <input type="button" value="Triangles" id="Triangle">
+            <input type="button" value="Circles" id="Circle">
+        </div>
+        <b>Shape Color:</b>
+        <div>
+                <label for="Red"><b>Red</b></label>
+                <input type="range" id="Red" name="Red" min="0" max="255" step="1">
+
+                <label for="Green"><b>Green</b></label>
+                <input type="range" id="Green" name="Green" min="0" max="255">
+    
+                <label for="Blue"><b>Blue</b></label>
+                <input type="range" id="Blue" name="Blue" min="0" max="255">
+
+                <label for="Transparency"><b>Transparency</b></label>
+                <input type="range" id="Alpha" name="transparency" min="0" max="255" value="255">
+        </div>
+        <div>
+            <label for="Shape Size"><b>Shape Size: </b></label>
+            <input type="range" id="Size" name="Shape Size" min="4" max="100">
+
+            <label for="(Circles) Segment Count"><b>(Circles) Segment Count: </b></label>
+            <input type="range" id="segment" name="(Circles) Segment Count" min="3" max="50"> 
+        </div>
+    </div>
+
+
+</body></html>

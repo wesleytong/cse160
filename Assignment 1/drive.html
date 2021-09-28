@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSE 160 Lab 1</title>	
+	</head>
+	
+	<body onload="main()">
+		<canvas id="webgl" width="400" height="400">
+		Please use a browser that supports "canvas"
+		</canvas>
+		<script src="./lib/webgl-utils.js"></script>
+		<script src="./lib/webgl-debug.js"></script>
+		<script src="./lib/cuon-utils.js"></script>
+		<script src="./lib/cuon-matrix.js"></script>		
+		<script src="./src/lab1.js"></script>
+		<!--<script src="fuck.js"></script>-->
+		
+		<div>
+			<div class="toolbar1">
+				<input type="button" id="clear" value="Clear Canvas">
+			</div>
+			<h3>Drawing Mode:</h3>
+			<div>
+				<input type="button" id="Circle" value="Circle" class="Circle">
+				<input type="button" id="Triangle"  value="Triangle" class="Triangle">
+				<input type="button" id="Square" value="Square" class="Square">		
+			</div>
+
+			<h3>Shape Color:</h3>
+			<div>
+				<label for="Red">Red</label>
+				<input type="range" id="Red" name="Red" min="0.0" max="255" value="128" step="1" class="Red">
+				<label for="Green">Green</label>
+				<input type="range" id="Green" name="Green" min="0.0" max="255" value="128" step="1" class="Green">
+				<label for="Blue">Blue</label>
+				<input type="range" id="Blue" name="Blue" min="0.0" max="255" value="128" step="1" class="Blue">
+				<label for="Alpha">Alpha</label>
+				<input type="range" id="Alpha" name="Alpha" min="0.0" max="255" value="255" step="1" class="Blue">
+			</div>
+			
+			<div>
+				<label for="Shape Size">Shape Size</label>
+				<input type="range" id="Size" name="Shape Size" min="5" max="100" step="1" value="50" class="Shape Size">
+				<label for="(Circles) Segment Count">(Circles) Segment Count</label>
+				<input type="range" id="segment" name="(Circles) Segment Count" min="3" max="50" value="25" step="1" class="Segment Count">
+			</div>
+			
+		</div>
+
+			
+		<p>Extra Features Added: Ability to draw squares and an alpha slider.</p>
+		<p>Hosted on: <a href="https://people.ucsc.edu/~wtong5" title="Wesley Tong's UCSC Page"</a>https://people.ucsc.edu/~wtong5</p>
+	</body>
+</html>

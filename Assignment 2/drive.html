@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSE 160 Lab 2</title>
+	</head>
+	
+	<body onload="main()">
+		<canvas id="webgl" width="800" height="800">
+		Please use a browser that supports "canvas"
+		</canvas>		
+		<script src="./lib/webgl-utils.js"></script>
+		<script src="./lib/webgl-debug.js"></script>
+		<script src="./lib/cuon-utils.js"></script>
+		<script src="./lib/cuon-matrix.js"></script>		
+		<script src="./src/lab2.js"></script>
+		
+		
+		<div>
+			<label for="animal">
+				<h2>Rotate the Dog: </h2>
+			</label>
+			<input id="rotate" type="range" name="animal" value="0" min="0" max="360">
+		</div>
+	</body>	
+</html>
